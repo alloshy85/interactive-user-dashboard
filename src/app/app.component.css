@@ -1,0 +1,105 @@
+.toolbar-title {
+  text-align: left;
+  width: auto;
+  margin-right: 16px; 
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  height: 48px; 
+}
+
+.search-field {
+  margin: 0 8px;
+  width: 250px;
+  height: 40px; 
+}
+
+.search-field mat-form-field {
+  height: 100%;
+}
+
+.search-field input {
+  border: none;
+  padding: 8px;
+  height: 100%;
+}
+
+.search-hint {
+  font-size: 12px;
+}
+
+.search-message {
+  margin: 16px;
+  text-align: center;
+}
+
+.app-container {
+  padding: 16px;
+}
+
+.user-card {
+  margin: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.view-details-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-button:hover {
+  background-color: #0056b3;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.mat-paginator-navigation-previous,
+.mat-paginator-navigation-next {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.mat-paginator-navigation-previous:hover,
+.mat-paginator-navigation-next:hover {
+  background-color: #0056b3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mat-toolbar {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0 16px;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}

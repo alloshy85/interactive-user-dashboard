@@ -1,0 +1,53 @@
+.user-details-card {
+    width: 400px;
+    margin: 2px auto;
+    text-align: center;
+  }
+  
+  .user-avatar {
+    width: 250px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    margin: 20px auto !important;
+    border-radius: 5% !important;
+  }
+  
+  mat-card-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  mat-card-subtitle {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  mat-list {
+    padding: 2px;
+  }
+  
+  mat-list-item {
+    padding: 1px 0;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2px;
+  }
+  .btn-back {
+    background-color: #007bff;
+    border: 1px solid white; 
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #0056b3;
+    border-color: white; 
+    color: white;
+  }

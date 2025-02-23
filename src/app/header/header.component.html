@@ -1,0 +1,9 @@
+<header>
+  <nav>
+    <a routerLink="/">Users</a>
+  </nav>
+  <div class="search-container">
+    <input type="number" [(ngModel)]="searchId" placeholder="Enter User ID">
+    <button (click)="searchUser()">Search</button>
+  </div>
+</header>

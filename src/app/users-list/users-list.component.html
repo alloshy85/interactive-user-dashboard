@@ -1,0 +1,19 @@
+<mat-progress-bar *ngIf="loading$ | async" mode="indeterminate"></mat-progress-bar>
+<div class="users-grid">
+  <mat-card *ngFor="let user of users$ | async" class="user-card">
+    <mat-card-header>
+      <img mat-card-avatar [src]="user.avatar" alt="User Avatar" class="user-avatar">
+      <mat-card-title>{{ user.first_name }} {{ user.last_name }}</mat-card-title>
+      <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <a mat-button class="view-details-button" [routerLink]="['/user', user.id]">View Details</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="pagination-controls">
+  <button (click)="previousPage()" [disabled]="currentPage === 1">Prev</button>
+  <span>Page {{ currentPage }} Of {{ totalPages$ | async }}</span>
+  <button (click)="nextPage()" [disabled]="(totalPages$ | async) === currentPage">Next</button>
+</div>
